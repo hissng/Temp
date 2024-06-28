@@ -1,19 +1,17 @@
 ﻿using System;
 
 Random rd = new Random();
-string input1 = "";
-string input2 = "";
+string input = "";
 int attempt = 1;
-string[] playerChoice;
-string[] computerChoice;
+string[] playerChoice = {"", "", ""};
+string[] computerChoice = { "", "", "" };
 int strike = 0;
 int ball = 0;
 int _out = 0;
 
-
 Console.Write("숫자야구 게임");
 Console.Write("\n\n<게임 방법>");
-Console.Write("\n    1. 3~4자리의 숫자를 임의로 정한 뒤, 서로에게 3~4자리의 숫자를 불러서 결과를 확인한다.");
+Console.Write("\n    1. 3자리의 숫자를 임의로 정한 뒤, 서로에게 3자리의 숫자를 불러서 결과를 확인한다.");
 Console.Write("\n    2. 그 결과를 토대로 상대가 적은 숫자를 예상한 뒤 맞힌다.");
 Console.Write("\n    3. 사용되는 숫자는 0에서 9까지 서로 다른 숫자이다.");
 Console.Write("\n    4. 숫자는 맞지만 위치가 틀렸을 때는 볼(B).");
@@ -22,7 +20,7 @@ Console.Write("\n    6. 숫자와 위치가 전부 틀리면 아웃(OUT).");
 Console.Write("\n    7. 5번의 기회안에 3S를 달성하면 승리.");
 Console.Write("\n\n\n\n\n\n시작하려면 아무 키나 입력하세요.");
 Console.Write("\n\n\n\n입력: ");
-input1 = Console.ReadLine();
+input = Console.ReadLine();
 
 while(true)
 {
@@ -47,22 +45,34 @@ while(true)
         if(strike == 3)  // 게임 승리
         {
             Console.Write("\n\n{0}/5번째 시도만에 3스트라이크 달성, 플레이어 승리!", attempt);
+            Console.Write("\n\n\n<최종결과>");
+            Console.Write("\n\n        {0} 볼", ball);
+            Console.Write("\n        {0} 스트라이크", strike);
+            Console.Write("\n        {0} 아웃", _out);
             Console.Write("\n\n다시 플레이하려면 아무 키나 입력하세요.");
             Console.Write("\n\n\n\n입력: ");
-            input1 = Console.ReadLine();
+            input = Console.ReadLine(); 
             break;
         }
   
-        else if(attempt == 5)
+        else if(attempt == 5)  // 게임 패배
         {
-
+            Console.Write("\n\n{0}/5번째 시도에도 3스트라이크 달성 실패, 플레이어 패배!", attempt);
+            Console.Write("\n\n\n<최종결과>");
+            Console.Write("\n\n        {0} 볼", ball);
+            Console.Write("\n        {0} 스트라이크", strike);
+            Console.Write("\n        {0} 아웃", _out);
+            Console.Write("\n\n다시 플레이하려면 아무 키나 입력하세요.");
+            Console.Write("\n\n\n\n입력: ");
+            input = Console.ReadLine(); 
+            break;
         }
         else
         {
             attempt++;
             Console.Write("\n\n다음 {0}/5번째 시도로 계속하려면 아무 키나 입력하세요.", attempt);
             Console.Write("\n\n\n\n입력: ");
-            input1 = Console.ReadLine();
+            input = Console.ReadLine(); 
         }
     }
     
@@ -108,7 +118,7 @@ void SBOCalc(string[] comparison_A, string[] comparison_B)
 string[] PlayerChoice()
 {
     string choice;
-    string[] splitedChoice;
+    string[] splitedChoice = {"", "", ""};
 
     while(true)
     {
@@ -117,7 +127,11 @@ string[] PlayerChoice()
 
         splitedChoice = choice.Split("");
 
-        if (splitedChoice.Length == 3)
+        Console.WriteLine(splitedChoice[0]);
+        Console.WriteLine(splitedChoice[1]);
+        Console.WriteLine(splitedChoice[2]);
+
+        try
         {
             for (int i = 0; i < splitedChoice.Length; i++)
             {
@@ -135,7 +149,7 @@ string[] PlayerChoice()
                 }
             }
         }
-        else  // 입력값이 3자리가 아니라면
+        catch  // 입력값이 3자리가 아니라면
         {
             InputErrorMessage();
             continue;
@@ -146,11 +160,11 @@ string[] PlayerChoice()
 
 string[] ComputerChoice()
 {
-    string[] choice = null;
+    string[] choice = {"", "", ""};
     for(int i = 0; i < 3; i++)  // 3자리를 만든다
     {
         choice[i] = rd.Next(0, 10).ToString();
-        for (int j = 0; j < choice.Length-1; j++)  // 기존에 만든 만큼 검사
+        for (int j = 0; j < i; j++)  // 기존에 만든 만큼 검사
         {
             if (choice[i] != choice[j])  // 기존에 만든 거랑 다르면 통과
             {
@@ -166,31 +180,6 @@ string[] ComputerChoice()
     return choice;
 }
 
-string GameSetting_Jaritsu(string choice)
-{
-    while (true)
-    {
-        Console.Clear();
-        Console.Write("\n\n<게임 시작 전>");
-        Console.Write("\n게임 설정을 시작합시다.");
-        Console.Write("\n자릿수를 선택하세요. 입력 칸에 원하는 번호를 입력하세요.");
-        Console.Write("\n\n    1. 3자리 (보통)");
-        Console.Write("\n\n    2. 4자리 (어려움)");
-        Console.Write("\n\n    3. 5자리 (매우 어려움)");
-        Console.Write("\n\n\n\n입력: ");
-        choice = Console.ReadLine();
-
-        if(choice == "1"||choice == "2"||choice == "3")
-        {
-            return choice;
-        }    
-        else
-        {
-            InputErrorMessage();
-            continue;
-        }
-    }
-}
 
 void InputErrorMessage()
 {
@@ -198,6 +187,27 @@ void InputErrorMessage()
     Console.Write("\n\n잘못 입력하셨습니다.");
     Console.Write("\n아무 키나 입력하면 다시 돌아갑니다.");
     Console.Write("\n\n\n\n입력: ");
-    input1 = Console.ReadLine();
+    input = Console.ReadLine(); 
+}
+
+string[] SplitString(string s, int length)
+{
+    string[] result = new string[length];
+    for(int i = 0; i < length; i++)
+    {
+
+    }    
+}
+string InputExceptedNull(string input)
+{
+    if (input == null)
+    {
+        input = "";
+        return input;
+    }
+    else
+    {
+        return input;
+    }
 }
 

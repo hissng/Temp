@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "f+4qK/UB5iAUTDVdjyoz3PQJDQqSraU5mXgIfLmeyy34SR6qj+qR3dU5JKEaJFfMybvpavo1icUfYH3ZiMzGaw==",
+  "dgSpecHash": "kCLHvB35arw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\gama1\\Documents\\GitHub\\Temp\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gama1\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\gama1\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\gama1\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\gama1\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.31\\microsoft.netcore.app.host.win-x64.6.0.31.nupkg.sha512"
+  ],
   "logs": []
 }
