@@ -4,7 +4,12 @@ Random rd = new Random();
 string input1 = "";
 string input2 = "";
 int attempt = 1;
-List<string> playerChoice = new List<string>();
+string[] playerChoice;
+string[] computerChoice;
+int strike = 0;
+int ball = 0;
+int _out = 0;
+
 
 Console.Write("숫자야구 게임");
 Console.Write("\n\n<게임 방법>");
@@ -21,14 +26,82 @@ input1 = Console.ReadLine();
 
 while(true)
 {
-    Console.Clear();
-    Console.Write("\n\n<게임 시작>");
-    Console.Write("\n\n\n\n    방금 컴퓨터가 0~9의 숫자 중 임의의 숫자를 정했습니다.");
-    Console.Write("\n    0~9의 숫자 중 3개의 숫자를 차례대로 입력하세요.");
-    Console.Write("\n    예시: 0, 1, 2 라면 012 입력.");
-    Console.Write("\n\n{0}/5번째 시도. ", attempt);
+    computerChoice = ComputerChoice();
+    while (true)
+    {
+        Console.Clear();
+        Console.Write("\n\n<숫자야구 게임: 게임 시작>");
+        Console.Write("\n\n\n\n    방금 컴퓨터가 0~9의 숫자 중 임의의 숫자를 정했습니다.");
+        Console.Write("\n    0~9의 숫자 중 3개의 숫자를 차례대로 입력하세요.");
+        Console.Write("\n    예시: 0, 1, 2 라면 012 입력.");
+        Console.Write("\n\n{0}/5번째 시도. ", attempt);
+        playerChoice = PlayerChoice();
+        SBOCalc(computerChoice, playerChoice);
+
+        Console.Clear();
+        Console.Write("\n\n<숫자야구 게임: {0}/5번째 시도 결과>", attempt);
+        Console.Write("\n\n\n\n현재까지 {0} 볼", ball);
+        Console.Write("\n        {0} 스트라이크", strike);
+        Console.Write("\n        {0} 아웃", _out);
+
+        if(strike == 3)  // 게임 승리
+        {
+            Console.Write("\n\n{0}/5번째 시도만에 3스트라이크 달성, 플레이어 승리!", attempt);
+            Console.Write("\n\n다시 플레이하려면 아무 키나 입력하세요.");
+            Console.Write("\n\n\n\n입력: ");
+            input1 = Console.ReadLine();
+            break;
+        }
+  
+        else if(attempt == 5)
+        {
+
+        }
+        else
+        {
+            attempt++;
+            Console.Write("\n\n다음 {0}/5번째 시도로 계속하려면 아무 키나 입력하세요.", attempt);
+            Console.Write("\n\n\n\n입력: ");
+            input1 = Console.ReadLine();
+        }
+    }
+    
 
     
+
+    
+}
+
+void SBOCalc(string[] comparison_A, string[] comparison_B)
+{
+    for(int i = 0; i < comparison_A.Length; i++)
+    {
+        for (int j = 0; j < comparison_B.Length; j++)
+        {
+            if (comparison_A[i] != comparison_B[j])
+            {
+                if(i+1 == comparison_A.Length && j+1 == comparison_B.Length)  // 다 돌렸는데도 다 다르면
+                {
+                    _out++;
+                    break;
+                }
+                continue;
+            }
+            else if (comparison_B[i] == comparison_A[j])  // 같은 숫자가 하나라도 있으면
+            {
+                if(i == j)  // 근데 자릿수까지 똑같으면
+                {
+                    strike++;
+                    break;
+                }
+                else  // 자릿수는 다르면
+                {
+                    ball++;
+                    break;
+                }
+            }
+        }
+    }
 }
 
 
@@ -77,18 +150,20 @@ string[] ComputerChoice()
     for(int i = 0; i < 3; i++)  // 3자리를 만든다
     {
         choice[i] = rd.Next(0, 10).ToString();
-        for (int j = 0; j < choice.Length; j++)  // 기존에 만든 만큼 검사
+        for (int j = 0; j < choice.Length-1; j++)  // 기존에 만든 만큼 검사
         {
-            if (choice[i] != choice[j])
+            if (choice[i] != choice[j])  // 기존에 만든 거랑 다르면 통과
             {
                 continue;
             }
-    
-            
-
+            else  // 기존에 만든 거랑 같으면 다시 랜덤값 삽입
+            {
+                i--;
+                break;
+            }
         }
-        
     }
+    return choice;
 }
 
 string GameSetting_Jaritsu(string choice)
