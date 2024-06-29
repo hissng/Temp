@@ -1,0 +1,15 @@
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\bin\Debug\net6.0\WolNamBBong.exe
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\bin\Debug\net6.0\WolNamBBong.deps.json
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\bin\Debug\net6.0\WolNamBBong.runtimeconfig.json
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\bin\Debug\net6.0\WolNamBBong.dll
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\bin\Debug\net6.0\WolNamBBong.pdb
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.AssemblyInfoInputs.cache
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.AssemblyInfo.cs
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.csproj.CoreCompileInputs.cache
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.sourcelink.json
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.dll
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\refint\WolNamBBong.dll
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.pdb
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\WolNamBBong.genruntimeconfig.cache
+C:\Users\gama1\Documents\GitHub\Temp\WolNamBBong\WolNamBBong\obj\Debug\net6.0\ref\WolNamBBong.dll
