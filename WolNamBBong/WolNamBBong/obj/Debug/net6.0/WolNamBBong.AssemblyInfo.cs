@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WolNamBBong")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+577561e1b317c936efa3f16ae2a29b3221a3de11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d44b98df2a27fe77a5a734df44df3c700e326f5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WolNamBBong")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WolNamBBong")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
