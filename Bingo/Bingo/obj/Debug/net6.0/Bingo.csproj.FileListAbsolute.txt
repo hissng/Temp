@@ -1,0 +1,15 @@
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\bin\Debug\net6.0\Bingo.exe
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\bin\Debug\net6.0\Bingo.deps.json
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\bin\Debug\net6.0\Bingo.runtimeconfig.json
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\bin\Debug\net6.0\Bingo.dll
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\bin\Debug\net6.0\Bingo.pdb
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.AssemblyInfoInputs.cache
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.AssemblyInfo.cs
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.csproj.CoreCompileInputs.cache
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.sourcelink.json
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.dll
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\refint\Bingo.dll
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.pdb
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\Bingo.genruntimeconfig.cache
+C:\Users\gama1\Documents\GitHub\Temp\Bingo\Bingo\obj\Debug\net6.0\ref\Bingo.dll
