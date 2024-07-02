@@ -1,0 +1,14 @@
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\bin\Debug\net6.0\NumberPuzzle.exe
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\bin\Debug\net6.0\NumberPuzzle.deps.json
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\bin\Debug\net6.0\NumberPuzzle.runtimeconfig.json
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\bin\Debug\net6.0\NumberPuzzle.dll
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\bin\Debug\net6.0\NumberPuzzle.pdb
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\NumberPuzzle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\NumberPuzzle.AssemblyInfoInputs.cache
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\NumberPuzzle.AssemblyInfo.cs
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\NumberPuzzle.csproj.CoreCompileInputs.cache
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\NumberPuzzle.dll
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\refint\NumberPuzzle.dll
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\NumberPuzzle.pdb
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\NumberPuzzle.genruntimeconfig.cache
+C:\Users\gama1\source\repos\NumberPuzzle\NumberPuzzle\obj\Debug\net6.0\ref\NumberPuzzle.dll
