@@ -8,6 +8,9 @@ string[] playerBingoArray = new string[25];
 string[] computerBingoCheckArray = new string[25];
 string[] playerBingoCheckArray = new string[25];
 
+int computerBingoNum;
+int playerBingoNum;
+
 int rowAndColumn;
 int row;
 int column;
@@ -166,8 +169,6 @@ int BingoCheck(string[] array, string[] checkArray, int arrayNum)
 
 void Reset()
 {
-
-
     for (int i = 0; i < 25; i++)
     {
         if (i + 1 < 10)
@@ -183,5 +184,8 @@ void Reset()
         computerBingoCheckArray[i] = "";
         playerBingoCheckArray[i] = "";
     }
+
+    computerBingoNum = 0;
+    playerBingoNum = 0;
 }
 
