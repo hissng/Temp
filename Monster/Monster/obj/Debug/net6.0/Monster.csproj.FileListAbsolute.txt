@@ -1,0 +1,14 @@
+C:\Users\gama1\source\repos\Monster\Monster\bin\Debug\net6.0\Monster.exe
+C:\Users\gama1\source\repos\Monster\Monster\bin\Debug\net6.0\Monster.deps.json
+C:\Users\gama1\source\repos\Monster\Monster\bin\Debug\net6.0\Monster.runtimeconfig.json
+C:\Users\gama1\source\repos\Monster\Monster\bin\Debug\net6.0\Monster.dll
+C:\Users\gama1\source\repos\Monster\Monster\bin\Debug\net6.0\Monster.pdb
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\Monster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\Monster.AssemblyInfoInputs.cache
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\Monster.AssemblyInfo.cs
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\Monster.csproj.CoreCompileInputs.cache
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\Monster.dll
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\refint\Monster.dll
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\Monster.pdb
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\Monster.genruntimeconfig.cache
+C:\Users\gama1\source\repos\Monster\Monster\obj\Debug\net6.0\ref\Monster.dll
